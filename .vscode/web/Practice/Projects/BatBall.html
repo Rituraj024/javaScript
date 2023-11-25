@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BatAndBall Game</title>
+  <link rel="stylesheet" href="BatBall.css">
+</head>
+<body>
+<h1>Bat Ball Game</h1>
+
+<button onclick="
+    var computerChoice = computerSelection();
+    var resultMsg;
+    if(computerChoice === 'Ball'){
+      resultMsg = 'User won';
+    }
+    else if(computerChoice === 'Bat'){
+      resultMsg = 'game draw';
+    }
+    else if(computerChoice === 'Stump'){
+      resultMsg = 'computer won';
+    }
+    alert(`you have choosen Bat. Computer choice: ${computerChoice}. Result: ${resultMsg}`);
+">Bat</button>
+
+<button onclick="
+    var computerChoice = computerSelection();
+    var resultMsg;
+    if(computerChoice === 'Ball'){
+      resultMsg = 'match draw';
+    }
+    else if(computerChoice === 'Bat'){
+      resultMsg = 'user won';
+    }
+    else if(computerChoice === 'Stump'){
+      resultMsg = 'computer won';
+    }
+    alert(`user choosen ball. Computer choice: ${computerChoice}. Result: ${resultMsg}`);
+">Ball</button>
+
+<button onclick="
+    var computerChoice = computerSelection();
+    var resultMsg;
+    if(computerChoice === 'Bat'){
+      resultMsg = 'user won';
+    }
+    else if(computerChoice === 'Ball'){
+      resultMsg = 'computer won';
+    }
+    else if(computerChoice === 'Stump'){
+      resultMsg = 'match draw';
+    }
+    alert(`you have choosen Stump. Computer choice: ${computerChoice}. Result: ${resultMsg}`);
+">Stump</button>
+
+<script src="BatBall.js"></script>
+</body>
+</html>

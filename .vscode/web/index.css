@@ -1,0 +1,17 @@
+.bag{
+  background-color: rgb(78, 234, 78);
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: none;
+}
+.wish{
+  padding: 5px 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.items{
+  background-color: greenyellow;
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: none;
+}
